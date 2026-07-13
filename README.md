@@ -1,2 +1,5 @@
 # notion-workspace-optimizer
-🧠 Hyper-Intelligent Notion Workspace Optimization Engine - Automated performance tuning, content deduplication, security hygiene, and MCP integration orchestration
+**Portfolio** — ranks Notion-class workspace pages for archive/collapse/split. Engineering only.
+```bash
+python3 src/optimizer.py && python3 tests/test_optimizer.py
+```
