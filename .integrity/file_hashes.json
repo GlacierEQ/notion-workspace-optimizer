@@ -1,0 +1,20 @@
+{
+  "repo": "notion-workspace-optimizer",
+  "algorithm": "sha256",
+  "file_count": 13,
+  "hashes": {
+    "LICENSE": "d2e78d6967910d631844584391eb951600525688c685ced8fed9fa4f79303a83",
+    "README.md": "74e9dd12c95372069e72034b29fec6fadbd1ec93d4cde8619c42782d4354b8e7",
+    "EASTER_EGGS.md": "0c4fc58a6163b54497fc8327ec77f4293330eea4ba636e30db202836bd450900",
+    "AKOS.md": "eae48200ee1bf2ec3fe2f267668b1dd09bac66f3bd2e01420e5787413f247a07",
+    "QUALITY_ASSURANCE_MANIFEST.md": "5781c789ca6c605a5f15b80f4d9a98536080b8279718221b728fa8247af45c83",
+    "HELIX_STRAND.md": "126cf02f237793c096263e5e957d64c0341f682a808b5cd0379fd887e574054e",
+    "mastermind_sidecar.py": "0b98ddfed0bf49b4230872e0216ea00c9e50f532b952eb8bc14c4510327cc280",
+    "SECURITY_AND_FLEET_OPS.md": "26141c0f07d95847d679de423ddb7bdee6f3e319d204383c89a58d6d3bb610c7",
+    "tests/test_optimizer.py": "7439b48ce749ecb39438fce2d42128d8e1d75ab65045829f5938f084e88a2d98",
+    "tests/test_cluster.py": "4de4d07a2b2dad382e3eb309fa9dca8e9f58dc709b7e39925a40b3e6f6affe1e",
+    ".github/workflows/ci.yml": "393542f8109cac2611d6ab41b8b062e6cc8be46894379568f15c0b7e2c1a639f",
+    "src/cluster.py": "50fa138e13cf8ac1b3ad3f0e5820f227f37631a5d2adc732092f24e2251f8a9a",
+    "src/optimizer.py": "b6ce1ac0468108025dd891881c9d2e1ca113cd71356c046d7defa1516b7b23d4"
+  }
+}
