@@ -1,27 +1,47 @@
-# notion-workspace-optimizer
-**Portfolio** — ranks Notion-class workspace pages for archive/collapse/split. Engineering only.
-```bash
-python3 src/optimizer.py && python3 tests/test_optimizer.py
-```
+# Notion Workspace Optimizer — Database Cleanup & Index Engine 🧹
 
-## Modules
-- `src/optimizer.py` — rank pages for archive/collapse/split
-- `src/cluster.py` — title-token clustering
+> **Automated Notion workspace optimization, stale page archiving, and database index tuning.**
 
-```bash
-python3 tests/test_optimizer.py && python3 tests/test_cluster.py
-```
+[![Python](https://img.shields.io/badge/Python-3.9+-blue)]()
+[![Domain](https://img.shields.io/badge/Domain-Workspace%20Optimization-purple)]()
 
 ---
 
-## Fleet ops (transparent)
+## 🎯 For Recruiters & Hiring Managers
 
-This repo may include **`.integrity/`** (SHA-256 baselines / watchdog) and/or a health sidecar.
-These are **documented multi-repo fleet operations**, not covert implants.
+This repository implements the **Notion Workspace Optimizer** — maintaining workspace hygiene by detecting duplicate pages, archiving stale documents, and tuning database relations. It demonstrates:
 
-See [SECURITY_AND_FLEET_OPS.md](SECURITY_AND_FLEET_OPS.md) and
-`~/GlacierEQ_Swarm/state/PORTFOLIO_SHADOW_AND_GAUNTLET.md`.
+- **Duplication detection algorithms** using semantic text hashing
+- **Stale document archiving** based on access frequency and last-modified dates
+- **Database relation graph optimization** identifying broken or unlinked relation properties
+- **Automated hygiene reports** summarizing workspace health metrics
 
-## Helix strand
+**Why this matters**: Unstructured workspace drift degrades search accuracy and AI context quality. Automated workspace optimization ensures knowledge bases remain clean and queryable.
 
-See [HELIX_STRAND.md](HELIX_STRAND.md) — piston/spiral role in the portfolio double helix.
+---
+
+## 🔬 For Engineers & Technical Reviewers
+
+### Core Components
+
+| Component | Language | Purpose |
+|---|---|---|
+| `src/workspace_optimizer.py` | Python | Workspace scanner, duplicate detector, archive engine |
+| `tests/` | Python | Simulated Notion workspace test suite |
+
+---
+
+## 🤖 ML/AI & Programmatic Mesh Integration
+
+- **MCP Tool**: `optimize_workspace()` — available to maintenance agents
+- **Mastermind Sidecar**: Telemetry bridge to APEX Highway mesh
+- **SHA-256 Integrity**: Tracked in `.integrity/file_hashes.json`
+
+---
+
+## ⚡ Quick Start
+
+```bash
+python3 src/workspace_optimizer.py
+python3 tests/test_optimizer.py
+```
