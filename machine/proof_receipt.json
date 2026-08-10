@@ -1,0 +1,31 @@
+{
+  "schema": "glaciereq.proof-receipt.v1",
+  "repository": "GlacierEQ/notion-workspace-optimizer",
+  "source_sha": "129b4b3a450c7218f868bdadc6ca82fb52b5974767b27b046f096816903cf1b6",
+  "proof_id": "elite-notion-workspace-optimizer-1786335149",
+  "environment": {
+    "python": "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python",
+    "PYTHONPATH": "/Users/kcbflux/job-app/repos/notion-workspace-optimizer:/Users/kcbflux/job-app/repos/notion-workspace-optimizer/src",
+    "entry": "unittest"
+  },
+  "tests": [
+    "/Users/kcbflux/job-app/excellence/.venv-elite/bin/python -m unittest discover -s tests -v (x2)"
+  ],
+  "adversarial_tests": [
+    "tests/test_adversarial.py"
+  ],
+  "runtime": {
+    "operate": "scripts/operate.py (x2)",
+    "dual_run_ok": true,
+    "proof_dual_run_ok": true
+  },
+  "result": "PASS",
+  "limitations": [
+    "not production deployed",
+    "reference implementation only"
+  ],
+  "timestamp": "2026-08-10T04:12Z",
+  "artifact_hashes": {
+    "operability_receipt": "ad38d224f5fffe3f3a0f252fe1e32b8bd7f3759c55b6c76354e9b4e2105a0621"
+  }
+}

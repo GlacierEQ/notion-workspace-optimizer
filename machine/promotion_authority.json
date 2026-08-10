@@ -1,0 +1,11 @@
+{
+  "schema": "glaciereq.promotion-authority-grant.v1",
+  "repository": "GlacierEQ/notion-workspace-optimizer",
+  "source_sha": "129b4b3a450c7218f868bdadc6ca82fb52b5974767b27b046f096816903cf1b6",
+  "proof_receipt_digest": "0dc208575db21f526b24154599baa743d594a25522c3188fbece584b8a9bb1e4",
+  "not_after": 1788927149.234226,
+  "mac": "6f38a5d9aa91a57db61b5fff160d782bc8295f5b9e5f7290bde4d3c6913cb65a",
+  "issuer": "local_operator_promotion_authority",
+  "verified": true,
+  "secret_ref": "src/promotion_authority.py::LOCAL_OPERATOR_SECRET"
+}

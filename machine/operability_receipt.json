@@ -1,0 +1,35 @@
+{
+  "schema": "glaciereq.operability-receipt.v1",
+  "repository": "GlacierEQ/notion-workspace-optimizer",
+  "at": "2026-08-10T04:12Z",
+  "source_sha": "129b4b3a450c7218f868bdadc6ca82fb52b5974767b27b046f096816903cf1b6",
+  "entry": "scripts/operate.py",
+  "primary_output": {
+    "module": "optimizer",
+    "ok": true,
+    "repository": "GlacierEQ/notion-workspace-optimizer",
+    "smoke": {
+      "args": [
+        "[Page(id='sample_id', title='sample_titl"
+      ],
+      "content_checked": true,
+      "invoked": true,
+      "kind": "fn",
+      "name": "optimize",
+      "result": {
+        "actions": [
+          {
+            "action": "REVIEW",
+            "id": "sample_id",
+            "score": 0.3141,
+            "title": "sample_title"
+          }
+        ],
+        "n": 1,
+        "ts": "2026-08-10T04:14:15.894678+00:00"
+      }
+    }
+  },
+  "dual_run_ok": true,
+  "result": "PASS"
+}

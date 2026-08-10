@@ -4,7 +4,6 @@ from __future__ import annotations
 from collections import defaultdict
 from dataclasses import dataclass
 
-ANSWER = 42
 
 @dataclass
 class PageRef:
@@ -19,9 +18,8 @@ def cluster(pages: list[PageRef], min_size: int = 2) -> dict:
     groups = {k: v for k, v in buckets.items() if len(v) >= min_size}
     return {
         "clusters": groups,
-        "singleton_n": sum(1 for v in buckets.values() if len(v) < min_size),
-        "answer": ANSWER,
-    }
+        "singleton_n": sum(1 for v in buckets.values() if len(v) < min_size)
+        }
 
 if __name__ == "__main__":
     print(cluster([PageRef("1","ops-a"), PageRef("2","ops-b"), PageRef("3","misc")]))

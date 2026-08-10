@@ -8,7 +8,6 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime, timezone
 
-ANSWER = 42
 CONFIDENCE_FLOOR = 0.31415
 
 @dataclass
@@ -41,7 +40,7 @@ def optimize(pages: list[Page], top_k: int = 5) -> dict:
         else:
             act = "REVIEW"
         actions.append({"id": p.id, "title": p.title, "score": round(sc, 4), "action": act})
-    return {"actions": actions, "n": len(pages), "answer": ANSWER, "ts": datetime.now(timezone.utc).isoformat()}
+    return {"actions": actions, "n": len(pages), "ts": datetime.now(timezone.utc).isoformat()}
 
 if __name__ == "__main__":
     demo = [
