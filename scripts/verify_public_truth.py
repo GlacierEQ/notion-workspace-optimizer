@@ -15,6 +15,7 @@ def require(condition: bool, message: str) -> None:
 
 def main() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
+    normalized = readme.replace("**", "").replace("`", "").lower()
     caps = json.loads((ROOT / "machine/capabilities.json").read_text(encoding="utf-8"))
     state = json.loads((ROOT / "machine/excellence-state.json").read_text(encoding="utf-8"))
 
@@ -29,10 +30,13 @@ def main() -> None:
     for phrase in forbidden:
         require(phrase not in readme, f"README contains unsupported claim/path: {phrase}")
 
-    require("does not connect to" in readme, "live Notion nonclaim missing")
-    require("not a probability" in readme, "policy-score semantic boundary missing")
-    require("do not perform any external action" in readme, "recommendation-only boundary missing")
-    require("not semantic hashing" in readme, "literal grouping boundary missing")
+    require("does not connect to" in normalized, "live Notion nonclaim missing")
+    require("not a probability" in normalized, "policy-score semantic boundary missing")
+    require(
+        "do not perform any external action" in normalized,
+        "recommendation-only boundary missing",
+    )
+    require("not semantic hashing" in normalized, "literal grouping boundary missing")
 
     allowed = {
         "deterministic-page-metadata-policy-scoring",
