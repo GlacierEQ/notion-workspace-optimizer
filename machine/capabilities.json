@@ -1,1 +1,14 @@
-{"capabilities": ["hyper-scaling"]}
+{
+  "schema": "glaciereq.bounded-capabilities.v1",
+  "capabilities": [
+    "deterministic-page-metadata-policy-scoring",
+    "bounded-workspace-review-recommendation-labeling",
+    "deterministic-title-prefix-grouping",
+    "validated-local-workspace-metadata-processing"
+  ],
+  "operational_authority": false,
+  "live_notion_api_integration": false,
+  "workspace_mutation": false,
+  "semantic_hashing_or_embedding_similarity": false,
+  "live_mcp_apex_mastermind_integration": false
+}
